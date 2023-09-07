@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login & Register</title>
+    <title>GMi Chaft | Register & Login</title>
     <link
       href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600"
       rel="stylesheet"
@@ -95,7 +95,7 @@ label {
   position: absolute;
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
-  left: 13px;
+  left: 610px;
   color: rgba(255, 255, 255, 0.5);
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -109,9 +109,9 @@ label .req {
 }
 
 label.active {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  left: 2px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  left: auto;
   font-size: 14px;
 }
 label.active .req {
@@ -214,10 +214,9 @@ textarea {
           <div id="signup">   
             <h1>Register for Free!</h1>
             
-            <x-card class="p-10 max-w-lg mx-auto mt-24">
+            
               <header class="text-center">
-                <h2 class="text-2xl font-bold uppercase mb-1">Register</h2>
-                <p class="mb-4">Create an account to Buy and Sell Item</p>
+                <p class="mb-4" style="color: #ffffff; font-weight: 3000; text-align: center; font-size: 20px;">Create an account to Buy and Sell Item</p>
               </header>
 
               <form method="POST" action="/users">
@@ -283,23 +282,21 @@ textarea {
                 </div>
 
                 <div class="mt-8">
-                  <p>
+                  <p style="color: #ffffff;">
                     Already have an account?
                     <a href="/login" class="text-laravel">Login</a>
                   </p>
                 </div>
               </form>
-            </x-card>
   
           </div>
           
           <div id="login">   
-            <h1>Welcome!</h1>
+            <h1>Welcome! Login</h1>
             
             <x-card class="p-10 max-w-lg mx-auto mt-24">
               <header class="text-center">
-                <h2 class="text-2xl font-bold uppercase mb-1">Login</h2>
-                <p class="mb-4">Log into your account to Buy and Sell item</p>
+                <p class="mb-4" style="color: #ffffff; font-weight: 3000; text-align: center; font-size: 20px;">Log into your account to Buy and Sell item</p>
               </header>
 
               <form method="POST" action="/users/authenticate">
@@ -333,7 +330,7 @@ textarea {
                 </div>
 
                 <div class="mt-8">
-                  <p>
+                  <p style="color: #ffffff;">
                     Don't have an account?
                     <a href="/register" class="text-laravel">Register</a>
                   </p>
